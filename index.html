@@ -236,6 +236,669 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/12/14/15688结课/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Lynne">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Lynne in Pitts">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="Lynne in Pitts" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/12/14/15688结课/" itemprop="url">
+                  总结这学期
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-14T21:52:22-05:00">
+                2016-12-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>撒花，688和601都结课了，上学期有cc，这学期有688和601，一直没去上课最后一节课见到了Zico, 哈哈。没想到Zico还是蛮帅的，一学期学到的东西还挺多，这里把学到的技能都盘点一下:</p>
+<p>###15688 Practical Datascience:<br>Regression, Classification, NLP, TFIDF, Hypothesis test, Decision tree and boosting, K-means, PCA, Probabilistic modeling, Map Reduce, Recommendation System, Deep learning, MLE, Stastics model, Python Scraper, Pandas, Numpy, Scikit learn, sqlite, Pagerank, Djisktra’s algorithm,Gaussian Mixture Model.  很多经典算法都用python实现了一遍加深理解。</p>
+<p>Assignment 1，自己写了个parser，基本各种玩正则，优化了一下，可以抓到a href的各种tag，比beautiful soup好用，哈哈。</p>
+<p>Assignment 2，processing bus stop data , Time series 算sliding average。自己写一个graph类，实现Djisktra’s algorithm 和 pagerank.</p>
+<p>Assignment 3, Text processing, scikit learn lemmatizer process features, NLP 手写tfidf, cosine_similarity, n-gram, perplexity.</p>
+<p>Assignment 4, Cross validation, 实现NB (Guassian 和 Categorical), Analyze mnist 算softmax loss 和 gradient descent</p>
+<p>Assignment 5, Unsupervised learning, 实现Kmeans, 算Entropy,实现GM算法，最后去predict faces，直接用svm就可以达到很高正确率了，据说最好的人用的是<br>a simple single layer textbook neural network with 100 hidden units and sigmoid activation functions, and used that for classification on the raw pixel data. 90%+的正确率，厉害了word 哥。Collaborative filtering 用了经典的movie data，用了Matrix Factorization approach，推荐给不同user. Hypothesis test用了weighted的data预测总统选举。</p>
+<p>Assignment 6, Deep learning, 这个谈的比较范范，重在实践所以用了Keras library, 不得不说比601自己写cnn爽多了，Map reduce, 这个上学期cc不知道做了多少次，也就是几个比较经典的应用了, linked network, k-means, word count. 最后一个作业用pymc library 去predict是哪一种用电，就是各种花式玩library。</p>
+<p>Tutorial 我做的XGBOOST, 真的是没时间研究都比较水。。final project做的airbnb review 和user behavior，都比较水啦。。。</p>
+<p>总的来说688还是比较实用的一门课，至少上完了课python和numpy,pandas的使用还是比较熟练了，各种library也可以用起来了，TA非常给力啊，Eric基本7x24小时piazza回答问题，啥都不说了，就是感动。</p>
+<h3 id="10601-Machine-Learning"><a href="#10601-Machine-Learning" class="headerlink" title="10601 Machine Learning"></a>10601 Machine Learning</h3><p>这门课一开始选了pf所以也没好好学，作业还是好好做的，作为ml的入门课，不小心选到了section B,结果变成了一门纯理论stats的课..TUT从此打消了我搞data science的念头。。实在是头发要掉光，谁叫我数学不好呢。。B走的..是传统路线，用的都是matlab和Octave(浓浓的数学风), 卧槽0 0之前从来没用过的我。。这门课据说之前都是Eric Xing和Tom Mitchel(大师啊)教的，后面就变成了。。唉。。<br>什么都不说了，先来一把提纲:<br>Decision Tree, The Naive Bayes algorithm , Logistic Rgression, Linear Regression,Perceptrons and Large Margin ,Kernels, SVM, Generalization and Overfitting: Sample Complexity Results ,Model Selection , Clustering,Neural Networks ,Deep Learning, Boosting, Active Learning , Semi-Supervised Learning ,Graphical Models, HMMs and CRFs (这个厉害了反正我是弃疗了),Expectation Maximization,Reinforcement Learning ,Matrix Factorization and Collaborative Filtering ..<br>作业基本就是几大张纸的数学题，autolab上的matlab题，反正什么NB, LR, SVM, CNN都实现了一遍，感觉很酸爽啊，虽然收获挺多（至少入了个门），课上厉害的人很多，反正我一个pf就没什么好说的了，相比较而言，data这种东西，还真是学数学的比较好啊。。。我还是适合码码代码。。</p>
+<h3 id="J2EE-Web-Service"><a href="#J2EE-Web-Service" class="headerlink" title="J2EE Web Service"></a>J2EE Web Service</h3><p>比较水，虽然是大牛Jeff Eppergine教的。。最后老师还给我一张彩票。。到现在都没看我有没有中奖。。就把web service讲了一遍，什么transaction那，servlet啦，都是比较简单的。。</p>
+<h3 id="Distributed-System"><a href="#Distributed-System" class="headerlink" title="Distributed System"></a>Distributed System</h3><p>老师讲的虽然烂，但是用心学还是能学很多，比如各种network protocol啦，distributed file system，jms，web service, RPC, RMI, time algorithm, distributed transactions.为了考试我还是默默地学习了一下， 可能之后会出个总结帖，但是以后搞infrastructure必须学的好才行啊。。。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/12/13/config/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Lynne">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Lynne in Pitts">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="Lynne in Pitts" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/12/13/config/" itemprop="url">
+                  Linux network
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-13T20:19:51-05:00">
+                2016-12-13
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="1-Topologies"><a href="#1-Topologies" class="headerlink" title="1. Topologies"></a>1. Topologies</h3><p>Physical topology:<br>Logical topology:</p>
+<p>Full Mesh: All devices to all other devices</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/11/23/Leetcode-easy-second/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Lynne">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Lynne in Pitts">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="Lynne in Pitts" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/11/23/Leetcode-easy-second/" itemprop="url">
+                  Leetcode easy second
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-23T23:46:25-05:00">
+                2016-11-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="DFS"><a href="#DFS" class="headerlink" title="DFS"></a>DFS</h2><p>DFS套路<br>1.排列permutation: 每次从i=0开始<br>2.组合combination: 每次从index+1开始<br>3.Duplicate: a. sort b. 在for循环里加上<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">i &gt; 0 &amp;&amp; i != index &amp;&amp; A[i] == A[i-1] ---&gt; continue</div></pre></td></tr></table></figure></p>
+<p>4.可重复利用<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">dfs(pos) instead of dfs(pos+1)</div></pre></td></tr></table></figure></p>
+<h3 id="463-Island-Perimeter"><a href="#463-Island-Perimeter" class="headerlink" title="463. Island Perimeter"></a>463. Island Perimeter</h3><p>题不难，遍历上下左右，没有岛的边长+1, <font color="#F08080">考虑到边界的情况</font>也要＋1.</p>
+<h3 id="NQueens"><a href="#NQueens" class="headerlink" title="NQueens"></a>NQueens</h3><p>关键在于判断是否在对角线上, abs(i - row) == abs(j - col), 且记住一定不能用遍历对角线的方法，因为之后的queen删除状态的时候可能会覆盖前面的状态，导致错误。</p>
+<h3 id="Palindrome-Partitioning"><a href="#Palindrome-Partitioning" class="headerlink" title="Palindrome Partitioning"></a>Palindrome Partitioning</h3><p>dfs经典写法，一段一段的往里面加</p>
+<h3 id="Permutation"><a href="#Permutation" class="headerlink" title="Permutation"></a>Permutation</h3><p>不sorted的版本很简单，sorted的版本关键在于<br>if (visited[i] == 1 ||<br>            (i &gt; 0 &amp;&amp; nums[i] == nums[i-1] &amp;&amp; visited[i-1] == 0)) {<br>                continue;<br>            }<br>前一个没有visit过，后一个visit过了，由于两个相同的数最后搭配出来是一样的，所以要舍弃！</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">for (int i = 0; i &lt; nums.length; i++) &#123;</div><div class="line">			if (visited[i] == 1 ||</div><div class="line">			(i &gt; 0 &amp;&amp; nums[i] == nums[i-1] &amp;&amp; visited[i-1] == 0)) &#123;</div><div class="line">				continue;</div><div class="line">			&#125;</div><div class="line">			visited[i] = 1;</div><div class="line">			tmp.add(nums[i]);</div><div class="line">			dfs(nums, visited, tmp, result);</div><div class="line">			tmp.remove(tmp.size()-1);</div><div class="line">			visited[i] = 0;</div><div class="line">		&#125;</div></pre></td></tr></table></figure>
+<h3 id="Combination-Sum"><a href="#Combination-Sum" class="headerlink" title="Combination Sum"></a>Combination Sum</h3><p>有duplicate，画风就不一样了，主要就是，<br>1.先sort～，然后  </p>
+<ol>
+<li>i != index (不是由当前i开始的组合sum)  </li>
+<li>并且A[i]==A[i-1],和之前那个数一样  </li>
+<li>若是和sum1这样可以重复利用一个数，dfs下一个的时候index不加1,因为还是可以从它自己开始的</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">for (int i = index; i &lt; A.length; i++) &#123;</div><div class="line">            if (i &gt;= 1 &amp;&amp; i != index &amp;&amp; A[i] == A[i-1]) &#123;</div><div class="line">                continue;</div><div class="line">            &#125;</div><div class="line">            tmp.add(A[i]);</div><div class="line">            dfs(A, i+1, target, tmp, currentSum + A[i]);</div><div class="line">            tmp.remove(tmp.size()-1);</div><div class="line">        &#125;</div></pre></td></tr></table></figure>
+<h2 id="String"><a href="#String" class="headerlink" title="String"></a>String</h2><h3 id="344-Reverse-String"><a href="#344-Reverse-String" class="headerlink" title="344. Reverse String"></a>344. Reverse String</h3><p>没什么好说的，两种方法<br>1.StringBuilder reverse() toString()  </p>
+<ol>
+<li>toCharArray然后copy到地二个array</li>
+</ol>
+<h3 id="389-Find-the-Difference"><a href="#389-Find-the-Difference" class="headerlink" title="389. Find the Difference"></a>389. Find the Difference</h3><p>这道题其实也很简单，遍历两遍，一次对应int [256]位置++,一次–,谁多了就是谁。</p>
+<h3 id="383-Ransom-Note"><a href="#383-Ransom-Note" class="headerlink" title="383. Ransom Note"></a>383. Ransom Note</h3><p>和find difference一样，同样的套路。</p>
+<h3 id="387-First-Unique-Character-in-a-String"><a href="#387-First-Unique-Character-in-a-String" class="headerlink" title="387. First Unique Character in a String"></a>387. First Unique Character in a String</h3><p>要记得，判断了一个字符是重复之后，要加入到set里面，避免以后出现同样的char但是被错过，经典例子’cc’.</p>
+<h3 id="242-Valid-Anagram"><a href="#242-Valid-Anagram" class="headerlink" title="242. Valid Anagram"></a>242. Valid Anagram</h3><p>还是一样，注意要两层循环，因为如果不check所有都是0的话，会有多余的字符没被匹配也会看作是true。</p>
+<h2 id="Bit-manipulation"><a href="#Bit-manipulation" class="headerlink" title="Bit manipulation"></a>Bit manipulation</h2><h3 id="136-Single-Number"><a href="#136-Single-Number" class="headerlink" title="136. Single Number  "></a><font color="#F08080">136. Single Number  </font></h3><p>这个我傻，只知道怎么用很笨的遍历。。但是也过了，谁叫是easy呢。。<br>正版的做法是用<font color="#F08080">bit manipulation</font>，待我熟悉熟悉bit运算再来纠结这道题</p>
+<h3 id="Count-1-in-Binary"><a href="#Count-1-in-Binary" class="headerlink" title="Count 1 in Binary"></a>Count 1 in Binary</h3><p>n &amp; (n-1) 可以消灭掉最右边的那个1， 如果整个数不等于0则循环结束，可以得到所有1<br>另一种做法 n &amp; 1, 没考虑负数的情况会超时</p>
+<h3 id="Flip-Bits"><a href="#Flip-Bits" class="headerlink" title="Flip Bits"></a>Flip Bits</h3><p>先a^b, 不一样的位置上是1，再用count 1 in binary 的方法。</p>
+<h3 id="231-Power-of-Two"><a href="#231-Power-of-Two" class="headerlink" title="231. Power of Two"></a>231. Power of Two</h3><p>这个简直了，因为简单所以大家都很牛逼的做法，什么bit啦，recursive啦</p>
+<h2 id="Dynamic-Programming"><a href="#Dynamic-Programming" class="headerlink" title="Dynamic Programming"></a>Dynamic Programming</h2><h3 id="292-Nim-Game"><a href="#292-Nim-Game" class="headerlink" title="292. Nim Game "></a><font color="#F08080">292. Nim Game </font></h3><p>这个简直经典了，虽然让我自己做肯定做不出来，但是小学奥数题啥的。一次可以取多少个的最大值+1，对它取模就知道可不可以赢了。和coins in a line 1 的解法一样，待研究。。。</p>
+<h3 id="455-Assign-cake"><a href="#455-Assign-cake" class="headerlink" title="455. Assign cake"></a>455. Assign cake</h3><p>我的做法，先sort两个，然后从后面比到前面，遇到满足的就＋＋，类似贪心</p>
+<h3 id="409-Longest-Palindrome"><a href="#409-Longest-Palindrome" class="headerlink" title="409. Longest Palindrome"></a>409. Longest Palindrome</h3><p>我的做法是先用int [256]数组存count， 再遍历一次，数字/2 可以得到最后的res，如果是有单数count最后结果就＋1。 </p>
+<h3 id="300-Longest-Increasing-Subsequence"><a href="#300-Longest-Increasing-Subsequence" class="headerlink" title="300. Longest Increasing Subsequence"></a>300. Longest Increasing Subsequence</h3><p>先用了dfs，果然超时n^2复杂度, 正确做法用dp, i先走，每次遍历j –&gt; 0-(i-1)，如果num[j] &lt; num[i],则更新f[i]为当前最大f[j]+1, 最后update max</p>
+<h2 id="Tree"><a href="#Tree" class="headerlink" title="Tree"></a>Tree</h2><h3 id="104-Maximum-Depth-of-Binary-Tree"><a href="#104-Maximum-Depth-of-Binary-Tree" class="headerlink" title="104. Maximum Depth of Binary Tree"></a>104. Maximum Depth of Binary Tree</h3><p>可以用递归，代码短，可以用traverse，容易理解。</p>
+<h3 id="226-Invert-Binary-Tree"><a href="#226-Invert-Binary-Tree" class="headerlink" title="226. Invert Binary Tree"></a>226. Invert Binary Tree</h3><p>注意一下顺序以及root的order。</p>
+<h2 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h2><p>经典套路1，不用extra memory移动数组!</p>
+<h3 id="283-Move-Zeroes"><a href="#283-Move-Zeroes" class="headerlink" title="283. Move Zeroes"></a>283. Move Zeroes</h3><p>i只管走，设一个index在一定条件下（这里是 nums[index++] != 0的时候）追着i走就好～</p>
+<h3 id="217-Contains-Duplicate"><a href="#217-Contains-Duplicate" class="headerlink" title="217. Contains Duplicate"></a>217. Contains Duplicate</h3><p>1.sort然后遍历nlogn<br>2.hashmap/hashset, o(n)空间<br>3.bitset&lt;有待研究&gt;</p>
+<h3 id="350-Intersection-of-Two-Arrays-II"><a href="#350-Intersection-of-Two-Arrays-II" class="headerlink" title="350. Intersection of Two Arrays II"></a>350. Intersection of Two Arrays II</h3><p>1.hashmap<br>2.arrays.sort完了之后同时遍历相等就放到新数组里  </p>
+<p><font color="#F08080">Q. 如果memory不大你怎么办？</font><br>Divide and conquer. Repeat the process frequently: Slice nums2 to fit into memory, process (calculate intersections), and write partial results to memory.</p>
+<h2 id="LinkedList"><a href="#LinkedList" class="headerlink" title="LinkedList"></a>LinkedList</h2><h3 id="206-Reverse-Linked-List"><a href="#206-Reverse-Linked-List" class="headerlink" title="206. Reverse Linked List"></a>206. Reverse Linked List</h3><p>啥都不说了，基本功</p>
+<h2 id="Tricky"><a href="#Tricky" class="headerlink" title="Tricky"></a>Tricky</h2><h3 id="453-Minimum-Moves-to-Equal-Array-Elements"><a href="#453-Minimum-Moves-to-Equal-Array-Elements" class="headerlink" title="453. Minimum Moves to Equal Array Elements"></a>453. Minimum Moves to Equal Array Elements</h3><p>这道题我一开始想的 (sumn + (n-1)k )/n 既要大于nums max, 又要被整除，很遗憾超时了，一看discussion，我了个大擦。。觉得自己傻逼了。。<br>同时n-1个增加1，最后到相等  其实就等于   每一个数每次减去1，最后到最小值相等啊。。</p>
+<h3 id="231-Power-of-Two-1"><a href="#231-Power-of-Two-1" class="headerlink" title="231. Power of Two"></a>231. Power of Two</h3><p>这个简直了，因为简单所以大家都很牛逼的做法，什么bit啦，recursive啦</p>
+<h2 id="Sliding-Window"><a href="#Sliding-Window" class="headerlink" title="Sliding Window"></a>Sliding Window</h2><p>424.Longest Repeating Character Replacement<br>简直被难倒了，这道题还以为用dp，结果sliding window，但是思想需要掌握，一般有k的数列题，不是特别明显用priorityqueue和dp的那种，基本就是sliding window了！！<br>思想就是：用一个window维护一个窗口，这个窗口里记录最长的字符串max，<br>1.max+k大于end-start，不管，window向后延伸就好，然后每次都更替一下现在的最大长度（end－start不一样噢，max不一样了）。<br>2.max＋k小于end－start的时候，更新start＋＋，让窗口向后移！</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/11/21/word-series/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Lynne">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Lynne in Pitts">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="Lynne in Pitts" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/11/21/word-series/" itemprop="url">
+                  word series
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-21T01:06:50-05:00">
+                2016-11-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/11/18/Leetcode-Subset-Permutation/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Lynne">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Lynne in Pitts">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="Lynne in Pitts" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/11/18/Leetcode-Subset-Permutation/" itemprop="url">
+                  Leetcode Subset Permutation
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-18T02:01:43-05:00">
+                2016-11-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="Leetcode经典套路DFS"><a href="#Leetcode经典套路DFS" class="headerlink" title="Leetcode经典套路DFS"></a>Leetcode经典套路DFS</h2><p>Permutation 题目的意思是这样，就是求全排列，先add自己进队列，再dfs，再回溯（说的高大上，其实就是每次完事之后挥一挥衣袖，回复到前一个状态中）下面这个解法是默认没有duplicate的时候。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line">public class Solution &#123;</div><div class="line">	public List&lt;List&lt;Integer&gt;&gt; permute(int [] nums) &#123;</div><div class="line">		List&lt;List&lt;Integer&gt;&gt; result = new ArrayList&lt;List&lt;Integer&gt;&gt;();</div><div class="line">		//判断null和length为0</div><div class="line">		if (nums == null || nums.length == 0) &#123;</div><div class="line">			return result;</div><div class="line">		&#125;</div><div class="line">		ArrayList&lt;Integer&gt; tmp = new ArrayList&lt;&gt;();</div><div class="line">		dfs(nums, tmp, result);</div><div class="line">		return result;</div><div class="line">	&#125;</div><div class="line">	private void dfs(int [] nums, List&lt;Integer&gt; tmp, List&lt;List&lt;Integer&gt;&gt; result) &#123;</div><div class="line">		if (nums.length == tmp.size()) &#123;</div><div class="line">			//当个数为全排时将list加入到最终结果中</div><div class="line">			//提醒一下这里必须创建新的数组并且把tmp copy过去啊，不然就直接加指针，相当于加同一个对象，tmp一直都在变，到头来你就加了一堆一毛一样的list</div><div class="line">			result.add(new ArrayList&lt;Integer&gt;(tmp));</div><div class="line">		&#125;</div><div class="line">		for (int i = 0; i &lt; nums.length; i++) &#123;</div><div class="line">			if (tmp.contains(nums[i])) &#123;</div><div class="line">				continue;</div><div class="line">			&#125;</div><div class="line">			//把自己加入队列</div><div class="line">			tmp.add(nums[i]);</div><div class="line">			//dfs</div><div class="line">			dfs(nums, tmp, result);</div><div class="line">			//remove掉自己</div><div class="line">			tmp.remove(tmp.size()-1);</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>经典部分在于:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">tmp.add(nums[i]);</div><div class="line">dfs(nums, tmp, result);  </div><div class="line">tmp.remove(tmp.size()-1);</div></pre></td></tr></table></figure>
+<p>对于有duplicate的时候，只返回distinct的做法，就不能单纯判断tmp.contains()这样了。。too young！<br>需要有一个flag记录是否被visited过，这里有个前提是要先排序，才能保证duplicate都是按顺序被dfs的！如果前面那个数和自己一毛一样，而且自己又没有visited过，那不好意思你就只有当炮灰了。<br>另一种写法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div></pre></td><td class="code"><pre><div class="line">public class Solution &#123;</div><div class="line">	public List&lt;List&lt;Integer&gt;&gt; permuteUnique(int [] nums) &#123;</div><div class="line">		List&lt;List&lt;Integer&gt;&gt; result = new ArrayList&lt;List&lt;Integer&gt;&gt;();</div><div class="line">		ArrayList&lt;Integer&gt; tmp = new ArrayList&lt;&gt;();</div><div class="line">		if (nums == null || nums.length == 0) &#123;</div><div class="line">		    result.add(tmp);</div><div class="line">			return result;</div><div class="line">		&#125;</div><div class="line">		//important！</div><div class="line">		Arrays.sort(nums);</div><div class="line">		int [] visited = new int[nums.length];</div><div class="line">		for (int i = 0; i &lt; nums.length; i++) &#123;</div><div class="line">			visited[i] = 0;</div><div class="line">		&#125;</div><div class="line">		dfs(nums, visited, tmp, result);</div><div class="line">		return result;</div><div class="line">	&#125;</div><div class="line">	public void dfs(int [] nums, int [] visited, List&lt;Integer&gt; tmp, List&lt;List&lt;Integer&gt;&gt; result) &#123;</div><div class="line">		//同样，全排的时候给加进去</div><div class="line">		if (nums.length == tmp.size()) &#123;</div><div class="line">			result.add(new ArrayList&lt;Integer&gt;(tmp));</div><div class="line">		&#125;</div><div class="line">		for (int i = 0; i &lt; nums.length; i++) &#123;</div><div class="line">			if (visited[i] == 1 ||</div><div class="line">			(i &gt; 0 &amp;&amp; nums[i] == nums[i-1] &amp;&amp; visited[i-1] == 0)) &#123;</div><div class="line">				continue;</div><div class="line">			&#125;</div><div class="line">			visited[i] = 1;</div><div class="line">			tmp.add(nums[i]);</div><div class="line">			dfs(nums, visited, tmp, result);</div><div class="line">			tmp.remove(tmp.size()-1);</div><div class="line">			visited[i] = 0;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>注意关键点在于下面：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">if (visited[i] == 1 ||</div><div class="line">			(i &gt; 0 &amp;&amp; nums[i] == nums[i-1] &amp;&amp; visited[i-1] == 0)) &#123;</div><div class="line">				continue;</div><div class="line">			&#125;</div></pre></td></tr></table></figure>
+<p>明天再告诉你</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
   <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/11/03/First-post/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -386,13 +1049,27 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">1</span>
+              <span class="site-state-item-count">6</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
 
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
           
 
         </nav>
