@@ -1,0 +1,591 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Lynne in Pitts">
+<meta property="og:url" content="http://yoursite.com/2016/12/31/OrderDependencyCode/index.html">
+<meta property="og:site_name" content="Lynne in Pitts">
+<meta property="og:description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210">
+<meta property="og:updated_time" content="2016-12-31T05:10:39.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Lynne in Pitts">
+<meta name="twitter:description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2016/12/31/OrderDependencyCode/"/>
+
+
+
+
+
+  <title>  | Lynne in Pitts </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Lynne in Pitts</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/12/31/OrderDependencyCode/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Lynne">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Lynne in Pitts">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="Lynne in Pitts" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-31T00:10:39-05:00">
+                2016-12-31
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">import java.util.*;//后来亚马逊自己加上了这一行</div><div class="line">class Order&#123;</div><div class="line">    String orderName;</div><div class="line">    public Order(String string)&#123;</div><div class="line">        this.orderName = string;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">class OrderDependency&#123;</div><div class="line">    Order cur;</div><div class="line">    Order pre;</div><div class="line">    public OrderDependency(Order pre, Order cur)&#123;</div><div class="line">        this.pre = pre;</div><div class="line">        this.cur = cur;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">public class Solution &#123;</div><div class="line">    public static List&lt;Order&gt; solution(List&lt;OrderDependency&gt; orderDependencies)&#123;</div><div class="line">        //拿来输出</div><div class="line">        List&lt;Order&gt; result = new ArrayList&lt;&gt;();</div><div class="line">        //接下来所有的key都保存的是string,orderName,这样直接避免重复输出。</div><div class="line">        //这个是计算入度</div><div class="line">        Map&lt;String, Integer&gt; inMap = new HashMap&lt;&gt;();</div><div class="line">        //出度,就是一个Order指着多少个其他Order</div><div class="line">        Map&lt;String, List&lt;String&gt;&gt; outMap = new HashMap&lt;&gt;();</div><div class="line">        //这个负责记录,记录orderName和Order的关系</div><div class="line">        Map&lt;String, Order&gt; recordMap = new HashMap&lt;&gt;();</div><div class="line">        //这个负责去掉重复</div><div class="line">        Set&lt;String&gt; set = new HashSet&lt;&gt;();</div><div class="line"></div><div class="line">        //下面开始把硅胶填入到这些map或是set里面,使其丰满</div><div class="line">        //这里就注意要仔细就行,别漏东西</div><div class="line">        for (OrderDependency od : orderDependencies) &#123;</div><div class="line">            Order pre = od.pre;</div><div class="line">            Order cur = od.cur;</div><div class="line">            String preName = pre.orderName;</div><div class="line">            String curName = cur.orderName;</div><div class="line">            set.add(preName);</div><div class="line">            set.add(curName);</div><div class="line">            //先塞好string和Order的map</div><div class="line">            if (!recordMap.containsKey(preName)) &#123;</div><div class="line">                recordMap.put(preName, pre);</div><div class="line">            &#125;</div><div class="line">            if (!recordMap.containsKey(curName)) &#123;</div><div class="line">                recordMap.put(curName, cur);</div><div class="line">            &#125;</div><div class="line"></div><div class="line">            //先做好入度</div><div class="line">            if (!inMap.containsKey(preName)) &#123;</div><div class="line">                inMap.put(preName, 0);</div><div class="line">            &#125;</div><div class="line">            if (inMap.containsKey(curName)) &#123;</div><div class="line">                inMap.put(curName, inMap.get(curName) + 1);</div><div class="line">            &#125;</div><div class="line">            else &#123;</div><div class="line">                inMap.put(curName, 1);</div><div class="line">            &#125;</div><div class="line">            //再做一下出度</div><div class="line">            List&lt;String&gt; temp = new ArrayList&lt;&gt;();</div><div class="line">            if (outMap.containsKey(preName)) &#123;</div><div class="line">                temp = outMap.get(preName);</div><div class="line">            &#125;</div><div class="line">            temp.add(curName);</div><div class="line">            outMap.put(preName, temp);</div><div class="line">            //这里得加个空表,否则后面的null会报错的</div><div class="line">            if (!outMap.containsKey(curName)) &#123;</div><div class="line">                outMap.put(curName, new ArrayList&lt;&gt;());</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        //一路BFS剥洋葱,每层都挑入度为0的string</div><div class="line">        Queue&lt;String&gt; queue = new LinkedList&lt;&gt;();</div><div class="line">        for(String str : inMap.keySet())&#123;</div><div class="line">            int inDegree = inMap.get(str);</div><div class="line">            if (inDegree == 0) &#123;</div><div class="line">                queue.offer(str);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        while(!queue.isEmpty())&#123;</div><div class="line">            String top = queue.poll();</div><div class="line">            //这里发挥了recordMap的作用</div><div class="line">            result.add(recordMap.get(top));</div><div class="line">            //这里挑出来之后,找它下家入度为0的</div><div class="line">            List&lt;String&gt; outList = outMap.get(top);</div><div class="line">            for (String next : outList) &#123;</div><div class="line">                inMap.put(next, inMap.get(next) - 1);</div><div class="line">                if (inMap.get(next) == 0) &#123;</div><div class="line">                    queue.offer(next);</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        //这一步判断成环估计不需要吧,以防万一</div><div class="line">        if (set.size() != result.size())&#123;</div><div class="line">            return null;</div><div class="line">        &#125;</div><div class="line">        return result;</div><div class="line">    &#125;</div><div class="line">    //这里是测试。</div><div class="line">    public static void main(String[] args) &#123;</div><div class="line">        Order o1 = new Order(&quot;泡面&quot;);</div><div class="line">        Order o2 = new Order(&quot;泡面&quot;);</div><div class="line">        Order o3 = new Order(&quot;SF&quot;);</div><div class="line">        Order o4 = new Order(&quot;租车&quot;);</div><div class="line">        Order o5 = new Order(&quot;SF&quot;);</div><div class="line">        Order o6 = new Order(&quot;泡面&quot;);</div><div class="line">        Order o7 = new Order(&quot;租车&quot;);</div><div class="line">        Order o8 = new Order(&quot;SF&quot;);</div><div class="line">        Order o9 = new Order(&quot;爽(每个行为只输出了一次对吧)&quot;);</div><div class="line">        OrderDependency od1 = new OrderDependency(o1, o3);</div><div class="line">        OrderDependency od2 = new OrderDependency(o2, o7);</div><div class="line">        OrderDependency od3 = new OrderDependency(o3, o9);</div><div class="line">        OrderDependency od4 = new OrderDependency(o4, o3);</div><div class="line">        OrderDependency od5 = new OrderDependency(o6, o9);</div><div class="line">        OrderDependency od6 = new OrderDependency(o8, o9);</div><div class="line">        OrderDependency od7 = new OrderDependency(o2, o5);</div><div class="line"></div><div class="line">        List&lt;OrderDependency&gt; list = new ArrayList&lt;&gt;();</div><div class="line">        list.add(od1);</div><div class="line">        list.add(od2);</div><div class="line">        list.add(od3);</div><div class="line">        list.add(od4);</div><div class="line">        list.add(od5);</div><div class="line">        list.add(od6);</div><div class="line">        list.add(od7);</div><div class="line">        //最后输出就是这种形式</div><div class="line">        List&lt;Order&gt; res = solution(list);</div><div class="line">        for (int i = 0; i &lt; res.size(); i++) &#123;</div><div class="line">            System.out.print(res.get(i).orderName);</div><div class="line">            if (i+1 &lt; res.size())&#123;</div><div class="line">                System.out.print(&quot; -&gt; &quot;);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/12/29/Diary/" rel="next" title="大话CP">
+                <i class="fa fa-chevron-left"></i> 大话CP
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/01/01/Happy-new-year/" rel="prev" title="Happy new year">
+                Happy new year <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="Lynne" />
+          <p class="site-author-name" itemprop="name">Lynne</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">12</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Lynne</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+	
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+
+</body>
+</html>

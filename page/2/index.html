@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="DFS," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -84,19 +84,12 @@
 
 
 
-<meta name="description" content="Leetcode经典套路DFSPermutation 题目的意思是这样，就是求全排列，先add自己进队列，再dfs，再回溯（说的高大上，其实就是每次完事之后挥一挥衣袖，回复到前一个状态中）下面这个解法是默认没有duplicate的时候。
-123456789101112131415161718192021222324252627282930public class Solution &amp;#123;	p">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Leetcode Subset Permutation">
-<meta property="og:url" content="http://yoursite.com/2016/11/18/Leetcode-Subset-Permutation/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lynne in Pitts">
+<meta property="og:url" content="http://yoursite.com/page/2/index.html">
 <meta property="og:site_name" content="Lynne in Pitts">
-<meta property="og:description" content="Leetcode经典套路DFSPermutation 题目的意思是这样，就是求全排列，先add自己进队列，再dfs，再回溯（说的高大上，其实就是每次完事之后挥一挥衣袖，回复到前一个状态中）下面这个解法是默认没有duplicate的时候。
-123456789101112131415161718192021222324252627282930public class Solution &amp;#123;	p">
-<meta property="og:updated_time" content="2016-11-18T07:47:10.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Leetcode Subset Permutation">
-<meta name="twitter:description" content="Leetcode经典套路DFSPermutation 题目的意思是这样，就是求全排列，先add自己进队列，再dfs，再回溯（说的高大上，其实就是每次完事之后挥一挥衣袖，回复到前一个状态中）下面这个解法是默认没有duplicate的时候。
-123456789101112131415161718192021222324252627282930public class Solution &amp;#123;	p">
+<meta name="twitter:title" content="Lynne in Pitts">
 
 
 
@@ -124,13 +117,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/11/18/Leetcode-Subset-Permutation/"/>
+  <link rel="canonical" href="http://yoursite.com/page/2/"/>
 
 
 
 
 
-  <title> Leetcode Subset Permutation | Lynne in Pitts </title>
+  <title> Lynne in Pitts </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -151,7 +144,9 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left page-post-detail ">
+  <div class="container one-collumn sidebar-position-left 
+   page-home 
+ ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -230,9 +225,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-
-  <div id="posts" class="posts-expand">
+  <section id="posts" class="posts-expand">
     
+      
 
   
 
@@ -265,7 +260,10 @@
             
             
               
-                Leetcode Subset Permutation
+                
+                <a class="post-title-link" href="/2016/11/18/Leetcode-Subset-Permutation/" itemprop="url">
+                  Leetcode Subset Permutation
+                </a>
               
             
           </h1>
@@ -314,7 +312,9 @@
       
 
       
-        <h2 id="Leetcode经典套路DFS"><a href="#Leetcode经典套路DFS" class="headerlink" title="Leetcode经典套路DFS"></a>Leetcode经典套路DFS</h2><p>Permutation 题目的意思是这样，就是求全排列，先add自己进队列，再dfs，再回溯（说的高大上，其实就是每次完事之后挥一挥衣袖，回复到前一个状态中）下面这个解法是默认没有duplicate的时候。</p>
+        
+          
+            <h2 id="Leetcode经典套路DFS"><a href="#Leetcode经典套路DFS" class="headerlink" title="Leetcode经典套路DFS"></a>Leetcode经典套路DFS</h2><p>Permutation 题目的意思是这样，就是求全排列，先add自己进队列，再dfs，再回溯（说的高大上，其实就是每次完事之后挥一挥衣袖，回复到前一个状态中）下面这个解法是默认没有duplicate的时候。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line">public class Solution &#123;</div><div class="line">	public List&lt;List&lt;Integer&gt;&gt; permute(int [] nums) &#123;</div><div class="line">		List&lt;List&lt;Integer&gt;&gt; result = new ArrayList&lt;List&lt;Integer&gt;&gt;();</div><div class="line">		//判断null和length为0</div><div class="line">		if (nums == null || nums.length == 0) &#123;</div><div class="line">			return result;</div><div class="line">		&#125;</div><div class="line">		ArrayList&lt;Integer&gt; tmp = new ArrayList&lt;&gt;();</div><div class="line">		dfs(nums, tmp, result);</div><div class="line">		return result;</div><div class="line">	&#125;</div><div class="line">	private void dfs(int [] nums, List&lt;Integer&gt; tmp, List&lt;List&lt;Integer&gt;&gt; result) &#123;</div><div class="line">		if (nums.length == tmp.size()) &#123;</div><div class="line">			//当个数为全排时将list加入到最终结果中</div><div class="line">			//提醒一下这里必须创建新的数组并且把tmp copy过去啊，不然就直接加指针，相当于加同一个对象，tmp一直都在变，到头来你就加了一堆一毛一样的list</div><div class="line">			result.add(new ArrayList&lt;Integer&gt;(tmp));</div><div class="line">		&#125;</div><div class="line">		for (int i = 0; i &lt; nums.length; i++) &#123;</div><div class="line">			if (tmp.contains(nums[i])) &#123;</div><div class="line">				continue;</div><div class="line">			&#125;</div><div class="line">			//把自己加入队列</div><div class="line">			tmp.add(nums[i]);</div><div class="line">			//dfs</div><div class="line">			dfs(nums, tmp, result);</div><div class="line">			//remove掉自己</div><div class="line">			tmp.remove(tmp.size()-1);</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <p>经典部分在于:</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">tmp.add(nums[i]);</div><div class="line">dfs(nums, tmp, result);  </div><div class="line">tmp.remove(tmp.size()-1);</div></pre></td></tr></table></figure>
@@ -324,66 +324,159 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">if (visited[i] == 1 ||</div><div class="line">			(i &gt; 0 &amp;&amp; nums[i] == nums[i-1] &amp;&amp; visited[i-1] == 0)) &#123;</div><div class="line">				continue;</div><div class="line">			&#125;</div></pre></td></tr></table></figure>
 <p>明天再告诉你</p>
 
+          
+        
       
     </div>
 
     <div>
       
-        
-
-      
     </div>
 
     <div>
-      
-        
-
       
     </div>
 
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/DFS/" rel="tag"># DFS</a>
-          
-        </div>
+
       
 
       
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2016/11/03/First-post/" rel="next" title="First post">
-                <i class="fa fa-chevron-left"></i> First post
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/11/21/word-series/" rel="prev" title="word series">
-                word series <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
       
-
-      
+        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
+    
+      
 
-    <div class="post-spread">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/11/03/First-post/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Lynne">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/images/avatar.gif">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Lynne in Pitts">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="Lynne in Pitts" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/11/03/First-post/" itemprop="url">
+                  First post
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-11-03T01:50:33-04:00">
+                2016-11-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>当当当当～经过一番折腾终于把Hexo搭好啦，俗话说的好，越忙越想折腾，折腾来折腾去总算是有了个写东西的地方。<br>主要想写点自己学到的东西，Java也好python也好, machine learning 也好，总之就先酱啦～明天还要复习考试，睡！</p>
+<p>Lynne<br>某个折腾的晚上</p>
+
+          
+        
       
     </div>
-  </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+  </nav>
+
 
 
           </div>
@@ -391,10 +484,6 @@
 
 
           
-  <div class="comments" id="comments">
-    
-  </div>
-
 
         </div>
         
@@ -414,17 +503,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview sidebar-panel">
+      <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -477,22 +557,6 @@
 
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Leetcode经典套路DFS"><span class="nav-number">1.</span> <span class="nav-text">Leetcode经典套路DFS</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
     </div>
@@ -591,10 +655,6 @@
   
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
-
-
 
   
 
